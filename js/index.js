@@ -19,14 +19,14 @@ function quadraticEquation(a, b, c) {
     }
 
     if (d > 0) {
-        x1 = (-b + Math.sqrt(d)) / 2 * a;
-        x2 = (-b - Math.sqrt(d)) / 2 * a;
+        x1 = (-b + Math.sqrt(d)) / (2 * a);
+        x2 = (-b - Math.sqrt(d)) / (2 * a);
         result = 'Дискримінант = √' + d + '<hr>' + 'Рівняння має два корені: х1 = ' + x1 + ', ' + 'х2 = ' + x2;
         return result;
     }
     else if (d === 0) {
-        x1 = -b / 2 * a;
-        x2 = -b / 2 * a;
+        x1 = -b / (2 * a);
+        x2 = -b / (2 * a);
         result = 'Дискримінант = √' + d + '<hr>' + 'Рівняння має один спільний корінь: х1, x2 = ' + x1; 
         return result;
     }
